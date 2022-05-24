@@ -28,7 +28,7 @@
         android:id="@+id/btnIngresar"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
-        android:onClick="Ingresar"
+        android:onClick="dataVolley"
         android:text="Ingresar"
         />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/common_google_signin_btn_icon_dark_normal"
         android:text="Google"
-        />
+        android:onClick="signIn"/>
 
 
 </LinearLayout>

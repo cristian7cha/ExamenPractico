@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "33056086101-pkscnad0u33pv4g2dbqdgmvpdpmcruoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.examenpractico",
+            "certificate_hash": "8c972f53d268a827e636329e02a673e3b5967ec5"
+          }
+        },
+        {
           "client_id": "33056086101-icsiq96isbq8abi53ubkq5fo3kj7k06r.apps.googleusercontent.com",
           "client_type": 3
         }
