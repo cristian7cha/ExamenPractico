@@ -12,37 +12,37 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Selecciona los sistemas operativos para los smartwatch:" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/boxFalso1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:text="iOS" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/boxRespuesta1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:text="WatchOS" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/boxFalso2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:text="Android" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/boxRespuesta2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:text="HarmonyOS" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSiguiente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Siguiente" />
 
     <Button
         android:id="@+id/btnAtras"
