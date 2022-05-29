@@ -130,23 +130,21 @@ public class MainActivity extends AppCompatActivity{
     public void Ingresar(){
         Intent ir = new Intent(this,Home.class);
         ir.addFlags(ir.FLAG_ACTIVITY_CLEAR_TASK | ir.FLAG_ACTIVITY_CLEAR_TOP);
+        String vEmail = ed1.getText().toString();
+        String vPassword = ed2.getText().toString();
+
         if(ed1.getText().toString().matches("") || ed2.getText().toString().matches("")){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Debe diligenciar todos los campos");
-            AlertDialog dialog = builder.create();
-            dialog.show();
+            Toast.makeText(this, "Debe diligenciar todos los campos",Toast.LENGTH_LONG).show();
         }else {
-            String vEmail = ed1.getText().toString();
-            String vPassword = ed2.getText().toString();
             for(int i=0; i<usuarios.length;i++){
-                if(usuarios[i].equals(vEmail) && password[i].equals(vPassword)){
+                if(usuarios[i].equals(vEmail) && password[i].equals(vPassword)) {
                     Bundle datos = new Bundle();
-                    datos.putString("name",ed1.getText().toString());
+                    datos.putString("name", ed1.getText().toString());
                     ir.putExtras(datos);
                     startActivity(ir);
+
                 }
             }
-
         }
     }
 

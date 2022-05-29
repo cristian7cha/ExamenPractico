@@ -9,11 +9,18 @@
     tools:context=".Home">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/btnAtras"
+        android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:onClick="atras"
         android:text="atras" />
+
+    <Button
+        android:id="@+id/btnServicio"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarServicio"
+        android:text="Verificar internet" />
 
 
 
