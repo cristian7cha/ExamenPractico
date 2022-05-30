@@ -49,6 +49,7 @@ public class Home extends AppCompatActivity {
                 if (verdadero1.isChecked() && verdadero2.isChecked() && !falso1.isChecked() && !falso2.isChecked()){
                     Intent i = new Intent(Home.this, Final.class);
                     startActivity(i);
+
                 }else{
                     Toast.makeText(getApplicationContext(),"Respuesta incorrecta, vuelve a intentar", Toast.LENGTH_SHORT).show();
                 }

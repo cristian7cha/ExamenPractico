@@ -44,6 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Siguiente" />
 
+
     <Button
         android:id="@+id/btnAtras"
         android:layout_width="315dp"
