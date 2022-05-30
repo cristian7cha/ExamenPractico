@@ -18,35 +18,28 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        MostrarHora obj = new MostrarHora();
+        revisarConexion obj = new revisarConexion();
         obj.execute();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
-    public  class  MostrarHora extends AsyncTask<Void,Integer,Void>{
+    public class revisarConexion extends AsyncTask<Void,Void,Void>{
         @Override
         protected Void doInBackground(Void... voids) {
-            for (int i = 0; i < 10; i++) {
-                publishProgress(i);
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+
             return null;
         }
 
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-            Toast.makeText(getApplicationContext(),"hola servicio: "+values[0], Toast.LENGTH_SHORT).show();
-        }
+
     }
 
 

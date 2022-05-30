@@ -48,7 +48,7 @@
         android:id="@+id/btnAtras"
         android:layout_width="315dp"
         android:layout_height="wrap_content"
-        android:onClick="atras"
+        android:onClick="cerrarSesion"
         android:text="Cerrar Sesion" />
 
     <Button

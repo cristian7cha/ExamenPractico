@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity{
     String[] nombres = new String[3];
     int RC_SIGN_IN = 1;
     String TAG = "GoogleSignIn";
-
-
     //Variable para gestionar FirebaseAuth
     private FirebaseAuth mAuth;
     //Agregar cliente de inicio de sesión de Google
@@ -65,7 +63,6 @@ public class MainActivity extends AppCompatActivity{
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
         mAuth = FirebaseAuth.getInstance();
 
     }
@@ -123,8 +120,6 @@ public class MainActivity extends AppCompatActivity{
         }
         super.onStart();
     }
-
-
 
 
     public void Ingresar(){
